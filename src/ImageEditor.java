@@ -9,21 +9,6 @@ import java.util.Scanner;
 public class ImageEditor {
 
 	public static void main(String[] args) {
-
-				if (i == 0 || j == 0) {
-					v = 128;
-				}
-				else {
-					redDiff = redPixels[i][j] - redPixels[i - 1][j - 1];
-					greenDiff = greenPixels[i][j] - greenPixels[i - 1][j - 1];
-					blueDiff = bluePixels[i][j] - bluePixels[i - 1][j - 1];
-					v = findMaxDifference(redDiff, greenDiff, blueDiff);
-					v += 128;
-
-					if (v < 0) {
-						v = 0;
-					}
-					else if (v > 255) {
 		File inputFile = null;
 		File outputFile = null;
 		Scanner scanner = null;
